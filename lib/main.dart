@@ -44,18 +44,11 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("TEST APP"),
 
       ),
-      body: Center(
-        child: Container(width: 400,height: 200,color: Colors.amber,
+      body: Column(
 
-        child: Center(
-            child: Text("Hii Bhoiiii",
-              style: TextStyle(color: Colors.blueAccent
-                  ,fontWeight: FontWeight.bold)
-              ,),
-        ),
-        ),
+      children: [Text('Akshay Pandit',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w800),)],
 
-      )
+      ),
     );
   }
 }
