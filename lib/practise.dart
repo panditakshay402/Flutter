@@ -1,14 +1,22 @@
-import 'dart:io';
-
-void main(){
-  var a=0;
-  var b=33;
-print(a);
-stdout.write(b);
-var akshay=stdin.readLineSync();
-print("hey  ,$akshay");
 
 
+import 'package:flutter_1/main.dart';
 
+void main()
+{
+  runApp(const MyApp());
+}
 
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
 }
