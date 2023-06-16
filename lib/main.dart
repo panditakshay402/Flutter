@@ -43,8 +43,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
       ),
       body: Column(
+      children: [
+        Row(
+          children: [Text('Hi Row',
+            style: TextStyle(fontWeight: FontWeight.w800,fontSize: 21),)],
+        ),
 
-      children: [Text('Akshay Pandit',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w800),),
+
+        Text('Hi Coloumn',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w800),),
       ElevatedButton(onPressed: (){
           print('Hi ABABAABABABAB');
       }, child: Text('Click here'))
