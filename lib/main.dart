@@ -46,16 +46,18 @@ class _MyHomePageState extends State<MyHomePage> {
       children: [
         Row(
           children: [Text('Hi Row',
-            style: TextStyle(fontWeight: FontWeight.w800,fontSize: 21),)],
+            style: TextStyle(fontWeight: FontWeight.w800,fontSize: 21),),
+          TextButton(onPressed:(){
+            print('this is Text Button');
+          }, child: Text('Click'))
+          ],
         ),
 
 
         Text('Hi Coloumn',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w800),),
       ElevatedButton(onPressed: (){
-          print('Hi ABABAABABABAB');
+          print('This is elevated button');
       }, child: Text('Click here'))
-
-
       ],
       ),
     );
