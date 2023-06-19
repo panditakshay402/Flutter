@@ -39,24 +39,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("TEST APP"),
 
       ),
-      body: Column(
-      children: [
-        Row(
-          children: [Text('Hi Row',
-            style: TextStyle(fontWeight: FontWeight.w800,fontSize: 21),),
-          TextButton(onPressed:(){
-            print('this is Text Button');
-          }, child: Text('Click'))
-          ],
-        ),
+      body:
+        Image.asset(""),
 
-
-        Text('Hi Coloumn',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w800),),
-      ElevatedButton(onPressed: (){
-          print('This is elevated button');
-      }, child: Text('Click here'))
-      ],
-      ),
     );
   }
 }
