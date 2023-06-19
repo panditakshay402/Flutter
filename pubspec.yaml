@@ -29,7 +29,7 @@ flutter:
 
 
   assets:
-    - images/
+    - Images/yori.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
