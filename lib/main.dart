@@ -44,7 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
             'Yorichi ka First Pic',
             style: TextStyle(fontSize: 21, fontWeight: FontWeight.w800),
           ),
-          Image.network(''),
+          Image.network(
+              'https://blog.logrocket.com/wp-content/uploads/2021/07/networking-flutter-http-package.png'),
           Text(
             'Yorichi ka Second Pic',
             style: TextStyle(fontSize: 21, fontWeight: FontWeight.w800),
