@@ -1,61 +1,31 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter/cupertino.dart';
-
 void main() {
-  runApp(testApp());
+  runApp(test2App());
 }
 
-class testApp extends StatelessWidget {
-  const testApp({Key? key}) : super(key: key);
+class test2App extends StatelessWidget {
+  const test2App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "test2",
-      theme: ThemeData(primarySwatch: Colors.green),
+      title: "Expanded Widget",
       debugShowCheckedModeBanner: false,
-      home: dashboard(),
+      theme: ThemeData(primarySwatch: Colors.grey),
+      home: Homepage(),
     );
-    return const Placeholder();
   }
 }
 
-class dashboard extends StatelessWidget {
-  const dashboard({Key? key}) : super(key: key);
+class Homepage extends StatelessWidget {
+  const Homepage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("dashbord"),
-      ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        color: Colors.red,
-        child: Center(
-          child: Container(
-            width: 200,
-            height: 150,
-            decoration: BoxDecoration(
-                color: Colors.amberAccent,
-                borderRadius: BorderRadius.circular(21),
-                border: Border.all(
-                  width: 5,
-                  color: Colors.pink,
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 14,
-                    color: Colors.black,
-                    spreadRadius: 16,
-                  )
-                ]),
-          ),
-        ),
-      ),
+    return MaterialApp(
+      title:
     );
-    return const Placeholder();
   }
 }
