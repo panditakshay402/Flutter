@@ -34,10 +34,19 @@ class dashboard extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         color: Colors.red,
-        child: Container(
-          width: 200,
-          height: 150,
-          color: Colors.amberAccent,
+        child: Center(
+          child: Container(
+            width: 200,
+            height: 150,
+            decoration: BoxDecoration(
+              color: Colors.amberAccent,
+              borderRadius: BorderRadius.circular(21),
+              border: Border.all(
+                width: 5,
+                color: Colors.pink,
+              ),
+            ),
+          ),
         ),
       ),
     );
