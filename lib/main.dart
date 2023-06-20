@@ -39,13 +39,19 @@ class dashboard extends StatelessWidget {
             width: 200,
             height: 150,
             decoration: BoxDecoration(
-              color: Colors.amberAccent,
-              borderRadius: BorderRadius.circular(21),
-              border: Border.all(
-                width: 5,
-                color: Colors.pink,
-              ),
-            ),
+                color: Colors.amberAccent,
+                borderRadius: BorderRadius.circular(21),
+                border: Border.all(
+                  width: 5,
+                  color: Colors.pink,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 14,
+                    color: Colors.black,
+                    spreadRadius: 16,
+                  )
+                ]),
           ),
         ),
       ),
