@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(testApp());
@@ -11,8 +12,8 @@ class testApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "uifu",
-      theme: ThemeData(primarySwatch: Colors.red),
+      title: "test2",
+      theme: ThemeData(primarySwatch: Colors.green),
       debugShowCheckedModeBanner: false,
       home: dashboard(),
     );
@@ -30,7 +31,14 @@ class dashboard extends StatelessWidget {
         title: Text("dashbord"),
       ),
       body: Container(
+        width: double.infinity,
+        height: double.infinity,
         color: Colors.red,
+        child: Container(
+          width: 200,
+          height: 150,
+          color: Colors.amberAccent,
+        ),
       ),
     );
     return const Placeholder();
