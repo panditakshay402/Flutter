@@ -1,55 +1,41 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Test2());
 }
 
-class MyApp extends StatelessWidget {
+class Test2 extends StatelessWidget {
+  const Test2({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AdsMoney',
-      theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-          scaffoldBackgroundColor: Colors.amberAccent),
-      home: const MyHomePage(title: 'This is Home Page'),
+      title: "Test2Appp",
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.grey),
+      home: dashboard(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+class dashboard extends StatefulWidget {
+  const dashboard({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<dashboard> createState() => _dashboardState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _dashboardState extends State<dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.cyanAccent,
-        title: Text("TEST APP"),
+        title: Text("Test2"),
       ),
-      body: Column(
-        children: [
-          Image.asset("Images/yori.jpg"),
-          Text(
-            'Yorichi ka First Pic',
-            style: TextStyle(fontSize: 21, fontWeight: FontWeight.w800),
-          ),
-          Image.network(
-              'https://blog.logrocket.com/wp-content/uploads/2021/07/networking-flutter-http-package.png'),
-          Text(
-            'Yorichi ka Second Pic',
-            style: TextStyle(fontSize: 21, fontWeight: FontWeight.w800),
-          ),
-        ],
+      body: Container(
+        width: 300,
+        height: 150,
       ),
     );
   }
