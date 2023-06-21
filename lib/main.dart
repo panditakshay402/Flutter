@@ -2,40 +2,47 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Test2());
+  runApp(MyApp());
 }
 
-class Test2 extends StatelessWidget {
-  const Test2({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Test2Appp",
+      title: "TimePAss",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.grey),
-      home: dashboard(),
+      theme: ThemeData(primarySwatch: Colors.green),
+      home: Dashboard(),
     );
   }
 }
 
-class dashboard extends StatefulWidget {
-  const dashboard({Key? key}) : super(key: key);
+class Dashboard extends StatelessWidget {
+  const Dashboard({Key? key}) : super(key: key);
 
-  @override
-  State<dashboard> createState() => _dashboardState();
-}
-
-class _dashboardState extends State<dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Test2"),
+        title: Text("Testing3rdTime"),
+        backgroundColor: Colors.lightGreenAccent,
       ),
       body: Container(
-        width: 300,
-        height: 150,
+        width: double.infinity,
+        height: double.infinity,
+        color: Colors.red,
+        child: Center(
+          child: Container(
+            width: 500,
+            height: 300,
+            decoration: BoxDecoration(
+                color: Colors.amberAccent,
+                borderRadius: BorderRadius.circular(11),
+                boxShadow: [BoxShadow(spreadRadius: 12)]),
+          ),
+        ),
       ),
     );
   }
