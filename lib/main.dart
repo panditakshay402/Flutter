@@ -29,6 +29,9 @@ class _dashState extends State<dash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("NOBDa"),
+      ),
       body: Container(
         child: Text(
           "HHHH",
