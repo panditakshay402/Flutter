@@ -32,10 +32,18 @@ class _dashState extends State<dash> {
       appBar: AppBar(
         title: Text("NOBDa"),
       ),
-      body: Container(
-        child: Text(
-          "HHHH",
-        ),
+      body: Row(
+        children: [
+          Column(
+            children: [
+              Container(
+                child: Text(
+                  "HHHH",
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
