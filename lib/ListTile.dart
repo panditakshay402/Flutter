@@ -14,15 +14,17 @@ class ListTiles extends StatelessWidget {
         ),
         body: ListView.separated(
           itemBuilder: (context, index) {
-            return Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(arrName[index]),
+            return ListTile(
+              leading: Text('${index + 1}'),
+              title: Text(arrName[index]),
+              subtitle: Text('Number'),
+              trailing: Icon(Icons.ice_skating),
             );
           },
           itemCount: arrName.length,
           separatorBuilder: (context, index) {
             return Divider(
-              height: 50,
+              height: 90,
               thickness: 2,
             );
           },
