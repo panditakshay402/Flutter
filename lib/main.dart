@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_1/practise.dart';
 
 void main() {
   runApp(myapp());
@@ -13,7 +14,7 @@ class myapp extends StatelessWidget {
     return MaterialApp(
       title: "hii boi",
       debugShowCheckedModeBanner: false,
-      home: dash(),
+      home: dashb(),
     );
   }
 }
