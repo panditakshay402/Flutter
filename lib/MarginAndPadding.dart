@@ -12,9 +12,13 @@ class MarginAndPadding extends StatelessWidget {
       ),
       body: Container(
         color: Colors.blue,
-        child: Text(
-          "Akshay",
-          style: TextStyle(fontWeight: FontWeight.w800, fontSize: 21),
+        margin: EdgeInsets.all(21),
+        child: Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Text(
+            "Akshay",
+            style: TextStyle(fontWeight: FontWeight.w800, fontSize: 21),
+          ),
         ),
       ),
     );
