@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_1/MarginAndPadding.dart';
 import 'package:flutter_1/practise.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class myapp extends StatelessWidget {
     return MaterialApp(
       title: "hii boi",
       debugShowCheckedModeBanner: false,
-      home: dashb(),
+      home: MarginAndPadding(),
     );
   }
 }
