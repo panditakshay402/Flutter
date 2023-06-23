@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 class ListTiles extends StatelessWidget {
   const ListTiles({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     var arrName = ['akshay', 'Ak', 'AKK', 'AAAA', 'AAyy'];
