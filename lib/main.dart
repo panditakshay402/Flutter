@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_1/FirstPage.dart';
 import 'package:flutter_1/Gridview.dart';
 import 'package:flutter_1/ListTile.dart';
 import 'package:flutter_1/MarginAndPadding.dart';
@@ -24,7 +25,7 @@ class myapp extends StatelessWidget {
     return MaterialApp(
       title: "hii boi",
       debugShowCheckedModeBanner: false,
-      home: stack(),
+      home: FirstPage(),
     );
   }
 }
