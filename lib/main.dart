@@ -1,10 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_1/Gridview.dart';
 import 'package:flutter_1/ListTile.dart';
 import 'package:flutter_1/MarginAndPadding.dart';
+import 'package:flutter_1/Textview.dart';
 import 'package:flutter_1/cardwidget.dart';
 import 'package:flutter_1/fontswala.dart';
 import 'package:flutter_1/practise.dart';
+import 'package:flutter_1/time.dart';
 
 import 'CircleAvatar.dart';
 
@@ -14,20 +17,18 @@ void main() {
 
 class myapp extends StatelessWidget {
   const myapp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "hii boi",
       debugShowCheckedModeBanner: false,
-      home: cardwidget(),
+      home: gridview(),
     );
   }
 }
 
 class dash extends StatefulWidget {
   const dash({Key? key}) : super(key: key);
-
   @override
   State<dash> createState() => _dashState();
 }
@@ -35,21 +36,19 @@ class dash extends StatefulWidget {
 class _dashState extends State<dash> {
   @override
   Widget build(BuildContext context) {
+    var time = DateTime.now();
     return Scaffold(
       appBar: AppBar(
         title: Text("NOBDa"),
       ),
-      body: Row(
+      body: Column(
         children: [
-          Column(
-            children: [
-              Container(
-                child: Text(
-                  "HHHH",
-                ),
-              ),
-            ],
-          ),
+          Text('time is $time'),
+          ElevatedButton(
+              onPressed: () {
+                setState(() {});
+              },
+              child: Text("Click Time"))
         ],
       ),
     );
