@@ -13,8 +13,8 @@ class gridview extends StatelessWidget {
           title: Text('Gridview'),
         ),
         body: GridView.builder(
-            gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3, mainAxisSpacing: 5, crossAxisSpacing: 5),
             itemCount: arrName.length,
             itemBuilder: (context, index) {
               return Container(
