@@ -8,7 +8,7 @@ class stack extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('stack'),
+        title: Text('stack wala'),
       ),
       body: Stack(
         children: [
