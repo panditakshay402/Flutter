@@ -9,34 +9,20 @@ class gridview extends StatelessWidget {
     var arrName = ['a', 'b', 'c', 'd', 'e'];
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Gridview'),
-      ),
-      body: GridView.count(
-        crossAxisCount: 3,
-        children: [
-          Text(
-            arrName[0],
-            style: TextStyle(color: Colors.amberAccent),
-          ),
-          Text(
-            arrName[1],
-            style: TextStyle(color: Colors.cyanAccent),
-          ),
-          Text(
-            arrName[2],
-            style: TextStyle(color: Colors.amber),
-          ),
-          Text(
-            arrName[3],
-            style: TextStyle(color: Colors.lightGreen),
-          ),
-          Text(
-            arrName[4],
-            style: TextStyle(color: Colors.blue),
-          ),
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Gridview'),
+        ),
+        body: GridView.builder(
+            gridDelegate:
+                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+            itemCount: arrName.length,
+            itemBuilder: (context, index) {
+              return Container(
+                width: 100,
+                height: 100,
+                color: Colors.red,
+                child: Text(arrName[index]),
+              );
+            }));
   }
 }
