@@ -4,6 +4,7 @@ import 'package:flutter_1/FirstPage.dart';
 import 'package:flutter_1/Gridview.dart';
 import 'package:flutter_1/ListTile.dart';
 import 'package:flutter_1/MarginAndPadding.dart';
+import 'package:flutter_1/SplashScreen.dart';
 import 'package:flutter_1/Textview.dart';
 import 'package:flutter_1/callback.dart';
 import 'package:flutter_1/cardwidget.dart';
@@ -25,7 +26,7 @@ class myapp extends StatelessWidget {
     return MaterialApp(
       title: "hii boi",
       debugShowCheckedModeBanner: false,
-      home: FirstPage(),
+      home: SplashScreen(),
     );
   }
 }
